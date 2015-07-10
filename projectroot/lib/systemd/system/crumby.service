@@ -1,0 +1,13 @@
+[Unit]
+Description=Start crumby
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/crumby --i2c_master=/dev/i2c-1
+KillMode=process
+Restart=always
+RestartSec=20s
+
+
+[Install]
+WantedBy=multi.user.target

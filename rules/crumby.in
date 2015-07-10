@@ -1,0 +1,12 @@
+## SECTION=project_specific
+
+config CRUMBY
+	bool
+	prompt "crumby"
+	select HOST_CMAKE
+	select LIBMODBUS3
+	select TNTNET
+	select BOOST
+	select BOOST_PROGRAM_OPTIONS
+	help
+	  FIXME
